@@ -42,6 +42,7 @@ public class JournalEntryController {
     	
 		  try { 
 			  List<JournalEntry> journalEntries = journalRepo.findAll(); 
+				/* System.out.print(journalEntries.get(0).getTitle()); */
 		  return new ResponseEntity < > (journalEntries, HttpStatus.OK ) ; } 
 		  catch (Exception e) { return
 		  ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build(); }
@@ -49,7 +50,7 @@ public class JournalEntryController {
     }
 }
  
-/* jackson */
+/* jackson *
 
 
 
