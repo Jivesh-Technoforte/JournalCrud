@@ -22,6 +22,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface JournalRepo extends JpaRepository<JournalEntry, Long> {
-    // Custom queries if needed
+    
 }
 
